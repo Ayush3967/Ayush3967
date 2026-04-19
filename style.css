@@ -292,9 +292,9 @@ h1, h2, h3, h4 {
 }
 
 .profile-ring-outer {
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
+    width: 260px;
+    height: 340px;
+    border-radius: 50% / 40%;
     background: radial-gradient(circle, rgba(249, 115, 22, 0.1) 0%, transparent 70%);
     display: flex;
     align-items: center;
@@ -323,9 +323,9 @@ h1, h2, h3, h4 {
 
 .profile-ring-inner {
     position: relative;
-    width: 240px;
-    height: 240px;
-    border-radius: 50%;
+    width: 220px;
+    height: 300px;
+    border-radius: 50% / 40%;
     background: #fff;
     overflow: hidden;
     z-index: 1;
