@@ -10,6 +10,7 @@
     
     /* Multi-Color Neon Palette */
     --neon-cyan: #38bdf8;
+    --neon-blue: #2563eb; /* New Deep Blue */
     --neon-purple: #a855f7;
     --neon-orange: #f97316;
     --neon-green: #4ade80;
@@ -95,6 +96,15 @@ body {
     top: 40%;
     left: 40%;
     animation-delay: -10s;
+}
+
+.blob-4 {
+    width: 350px;
+    height: 350px;
+    background: rgba(37, 99, 235, 0.15);
+    top: 20%;
+    right: 20%;
+    animation-delay: -15s;
 }
 
 @keyframes blobFloat {
@@ -264,13 +274,15 @@ h1, h2, h3, h4 {
         135deg, 
         var(--neon-purple), 
         transparent, 
+        var(--neon-blue), 
+        transparent, 
         var(--neon-orange), 
         transparent, 
         var(--neon-green), 
         transparent, 
         var(--neon-cyan)
     );
-    background-size: 400% 400%;
+    background-size: 500% 500%;
     -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
@@ -278,7 +290,7 @@ h1, h2, h3, h4 {
     mask-composite: exclude;
     opacity: 0.8;
     transition: opacity 0.4s ease;
-    animation: gradientFlow 8s linear infinite;
+    animation: gradientFlow 10s linear infinite;
 }
 
 @keyframes gradientFlow {
@@ -466,7 +478,7 @@ h1, h2, h3, h4 {
 .profile-ring-neon-2 {
     inset: -22px;
     border-radius: 50% / 25%;
-    border-top-color: var(--neon-green);
+    border-top-color: var(--neon-blue);
     border-bottom-color: var(--neon-cyan);
     animation-direction: reverse;
     animation-duration: 6s;
