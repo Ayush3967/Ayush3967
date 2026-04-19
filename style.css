@@ -1,6 +1,6 @@
 /* CSS Reset and Variables */
 :root {
-    --bg-color: #a8d8f0; /* Light blue outer background */
+    --bg-color: #add8e6; /* Updated Light blue outer background */
     --board-bg: #0c3d66; /* Dark blue board background */
     --board-frame: #051e3d; /* Darker blue board frame */
     --card-bg: rgba(255, 255, 255, 0.05); /* Slightly lighter column cards */
