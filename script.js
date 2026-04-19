@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update background blob positions subtly based on mouse
         const blobs = document.querySelectorAll('.blob');
         blobs.forEach((blob, index) => {
-            const speed = (index + 1) * 0.02;
+            const speed = (index + 1) * 0.015; // Slower speed for more blobs
             const bx = (window.innerWidth / 2 - x) * speed;
             const by = (window.innerHeight / 2 - y) * speed;
             blob.style.transform = `translate(${bx}px, ${by}px) scale(${1 + (speed * 2)})`;

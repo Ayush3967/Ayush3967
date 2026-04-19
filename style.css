@@ -10,10 +10,12 @@
     
     /* Multi-Color Neon Palette */
     --neon-cyan: #38bdf8;
-    --neon-blue: #2563eb; /* New Deep Blue */
+    --neon-blue: #2563eb;
     --neon-purple: #a855f7;
     --neon-orange: #f97316;
     --neon-green: #4ade80;
+    --neon-red: #ef4444;
+    --neon-yellow: #facc15;
     
     --accent: var(--neon-purple); /* Main accent is now purple */
     --accent-glow: rgba(168, 85, 247, 0.4);
@@ -105,6 +107,24 @@ body {
     top: 20%;
     right: 20%;
     animation-delay: -15s;
+}
+
+.blob-5 {
+    width: 300px;
+    height: 300px;
+    background: rgba(239, 68, 68, 0.1);
+    top: 60%;
+    left: 10%;
+    animation-delay: -7s;
+}
+
+.blob-6 {
+    width: 250px;
+    height: 250px;
+    background: rgba(250, 204, 21, 0.1);
+    bottom: 20%;
+    left: 40%;
+    animation-delay: -12s;
 }
 
 @keyframes blobFloat {
@@ -272,6 +292,10 @@ h1, h2, h3, h4 {
     padding: 2px;
     background: linear-gradient(
         135deg, 
+        var(--neon-red),
+        transparent,
+        var(--neon-yellow),
+        transparent,
         var(--neon-purple), 
         transparent, 
         var(--neon-blue), 
@@ -282,15 +306,15 @@ h1, h2, h3, h4 {
         transparent, 
         var(--neon-cyan)
     );
-    background-size: 500% 500%;
+    background-size: 600% 600%;
     -webkit-mask: 
         linear-gradient(#fff 0 0) content-box, 
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    opacity: 0.8;
+    opacity: 0.9;
     transition: opacity 0.4s ease;
-    animation: gradientFlow 10s linear infinite;
+    animation: gradientFlow 15s linear infinite;
 }
 
 @keyframes gradientFlow {
@@ -470,16 +494,16 @@ h1, h2, h3, h4 {
     inset: -10px;
     border-radius: 50% / 25%;
     border: 3px solid transparent;
-    border-top-color: var(--neon-purple);
-    border-bottom-color: var(--neon-orange);
+    border-top-color: var(--neon-red);
+    border-bottom-color: var(--neon-yellow);
     animation: rotate 4s linear infinite;
 }
 
 .profile-ring-neon-2 {
     inset: -22px;
     border-radius: 50% / 25%;
-    border-top-color: var(--neon-blue);
-    border-bottom-color: var(--neon-cyan);
+    border-top-color: var(--neon-purple);
+    border-bottom-color: var(--neon-blue);
     animation-direction: reverse;
     animation-duration: 6s;
     opacity: 0.8;
